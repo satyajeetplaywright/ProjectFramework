@@ -43,7 +43,7 @@ Before({ timeout: 60000 }, async function (this: CustomWorld) {
     } else {
 
         this.browser = await chromium.launch({
-            headless: false,
+            headless: process.env.CI ? true : false,
             args: ["--start-maximized"]
         });
 
