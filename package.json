@@ -1,0 +1,23 @@
+{
+  "name": "projectframework_08_feb_26",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --config cucumber.json",
+    "chrome": "cross-env BROWSER=chromium cucumber-js --config cucumber.json",
+    "firefox": "cross-env BROWSER=firefox cucumber-js --config cucumber.json",
+    "webkit": "cross-env BROWSER=webkit cucumber-js --config cucumber.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.8.2",
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "cross-env": "^10.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}

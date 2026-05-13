@@ -1,0 +1,227 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "address-functionality;verify-user-is-able-to-add-address",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verify user is able to add address",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3834621999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user lauches browser and url",
+            "match": {
+              "location": "src\\steps\\homepagesteps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 350399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "user clicks on signin button",
+            "match": {
+              "location": "src\\steps\\homepagesteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 359237600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user enters email \"test110@gmail.com\"",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 872873499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "user enters password \"Test@1234\"",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23367500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 719374599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "user landed on \"https://ecommerceguru.odoo.com/my\"",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 815574800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "user click on accountDropdown",
+            "match": {
+              "location": "src\\steps\\logoutsteps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73131100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "user cliks on my Account button",
+            "match": {
+              "location": "src\\steps\\paymentsteps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 200139499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "user clicks on Addresses link",
+            "match": {
+              "location": "src\\steps\\addressaddsteps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 262763500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "user clicks on add address button",
+            "match": {
+              "location": "src\\steps\\addressaddsteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 366284799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "user enters name as \"test110\", email as \"test111@gmail.com\", phone as \"7777766666\"",
+            "match": {
+              "location": "src\\steps\\addressaddsteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 213095699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "user enters street as \"MG road\", city as \"Mumbai\", zip code as \"777666\"",
+            "match": {
+              "location": "src\\steps\\addressaddsteps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 229277200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "user clicks on save address button",
+            "match": {
+              "location": "src\\steps\\addressaddsteps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 68362300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "user is able to see \"MG road\" and \"Mumbai\" in added address",
+            "match": {
+              "location": "src\\steps\\addressaddsteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 897887499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1263941199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@addAddress",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "address-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "address functionality",
+    "tags": [],
+    "uri": "src\\features\\address.feature"
+  }
+]
