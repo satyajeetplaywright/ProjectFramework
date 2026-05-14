@@ -14,6 +14,7 @@ import { Shoppage } from "../pages/shoppage";
 import { Paymentmethodpage } from "../pages/paymentmethodpage";
 import { Addressespage } from "../pages/addressespage";
 import { Deliveryaddresspage } from "../pages/deliveryaddresspage";
+import { Securitypage } from "../pages/securitypage";
 
 export class CustomWorld extends World {
 
@@ -35,6 +36,7 @@ export class CustomWorld extends World {
     paymentmethodpage_obj!: Paymentmethodpage;
     addressespage_obj!: Addressespage;
     deliveryaddresspage_obj!: Deliveryaddresspage;
+    securitypage_obj!: Securitypage;
 
     constructor(options: IWorldOptions) {
         super(options);

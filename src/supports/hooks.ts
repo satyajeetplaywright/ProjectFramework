@@ -16,6 +16,7 @@ import { Shoppage } from "../pages/shoppage";
 import { Paymentmethodpage } from "../pages/paymentmethodpage";
 import { Addressespage} from "../pages/addressespage";
 import { Deliveryaddresspage } from "../pages/deliveryaddresspage";
+import { Securitypage } from "../pages/securitypage";
 
 
 Before({ timeout: 60000 }, async function (this: CustomWorld) {
@@ -74,6 +75,7 @@ Before({ timeout: 60000 }, async function (this: CustomWorld) {
     this.paymentmethodpage_obj = new Paymentmethodpage(this.page);
     this.addressespage_obj = new Addressespage(this.page);
     this.deliveryaddresspage_obj = new Deliveryaddresspage(this.page);
+    this.securitypage_obj = new Securitypage(this.page);
 });
 
 After({ timeout: 60000 }, async function (this: CustomWorld) {

@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "address-functionality;verify-user-is-able-to-add-address",
+        "id": "address-functionality;verify-user-is-able-change-password",
         "keyword": "Scenario",
         "line": 4,
-        "name": "Verify user is able to add address",
+        "name": "Verify user is able change password",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 3834621999
+              "duration": 6581164100
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 350399
+              "duration": 3261699
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 359237600
+              "duration": 634407900
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 872873499
+              "duration": 946517599
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23367500
+              "duration": 49544499
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 719374599
+              "duration": 1097474000
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 815574800
+              "duration": 1073568999
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 73131100
+              "duration": 297841199
             }
           },
           {
@@ -118,85 +118,85 @@
             },
             "result": {
               "status": "passed",
-              "duration": 200139499
+              "duration": 381595500
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 13,
-            "name": "user clicks on Addresses link",
+            "name": "user clicks on connection and security link",
             "match": {
-              "location": "src\\steps\\addressaddsteps.ts:5"
+              "location": "src\\steps\\securitysteps.ts:5"
             },
             "result": {
               "status": "passed",
-              "duration": 262763500
+              "duration": 747562399
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 14,
-            "name": "user clicks on add address button",
+            "name": "user enters current password \"Test@1234\"",
             "match": {
-              "location": "src\\steps\\addressaddsteps.ts:9"
+              "location": "src\\steps\\securitysteps.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 366284799
+              "duration": 228010600
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 15,
-            "name": "user enters name as \"test110\", email as \"test111@gmail.com\", phone as \"7777766666\"",
+            "name": "user enters new password \"Test@12345\"",
             "match": {
-              "location": "src\\steps\\addressaddsteps.ts:13"
+              "location": "src\\steps\\securitysteps.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 213095699
+              "duration": 71282199
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 16,
-            "name": "user enters street as \"MG road\", city as \"Mumbai\", zip code as \"777666\"",
+            "name": "user enters verify new password \"Test@12345\"",
             "match": {
-              "location": "src\\steps\\addressaddsteps.ts:20"
+              "location": "src\\steps\\securitysteps.ts:17"
             },
             "result": {
               "status": "passed",
-              "duration": 229277200
+              "duration": 34942100
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 17,
-            "name": "user clicks on save address button",
+            "name": "user clicks on change password button",
             "match": {
-              "location": "src\\steps\\addressaddsteps.ts:27"
+              "location": "src\\steps\\securitysteps.ts:21"
             },
             "result": {
               "status": "passed",
-              "duration": 68362300
+              "duration": 3979331500
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 18,
-            "name": "user is able to see \"MG road\" and \"Mumbai\" in added address",
+            "name": "user is able to see the message \"Password Updated!\"",
             "match": {
-              "location": "src\\steps\\addressaddsteps.ts:31"
+              "location": "src\\steps\\securitysteps.ts:25"
             },
             "result": {
               "status": "passed",
-              "duration": 897887499
+              "duration": 970697499
             }
           },
           {
@@ -204,13 +204,13 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1263941199
+              "duration": 1447650900
             }
           }
         ],
         "tags": [
           {
-            "name": "@addAddress",
+            "name": "@changepassord",
             "line": 3
           }
         ],
@@ -222,6 +222,6 @@
     "keyword": "Feature",
     "name": "address functionality",
     "tags": [],
-    "uri": "src\\features\\address.feature"
+    "uri": "src\\features\\security.feature"
   }
 ]

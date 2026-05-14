@@ -22,4 +22,4 @@ Then('user is able to see the payment details on payment details page {string}',
     await this.page.waitForLoadState('networkidle');
     let actualPaymentDetails = await this.paymentmethodpage_obj.getPaymentDataText();
     await expect(actualPaymentDetails).toContain(expectedpaymentdetails);
-})
+});
