@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "address-functionality;verify-user-is-able-change-password",
+        "id": "product-remove-functionality;verify-user-is-able-to-remove-product-from-cart",
         "keyword": "Scenario",
         "line": 4,
-        "name": "Verify user is able change password",
+        "name": "Verify user is able to remove product from cart",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 6581164100
+              "duration": 5090686700
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3261699
+              "duration": 352199
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 634407900
+              "duration": 370261899
             }
           },
           {
@@ -53,20 +53,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 946517599
+              "duration": 853170100
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "user enters password \"Test@1234\"",
+            "name": "user enters password \"Test@12345\"",
             "match": {
               "location": "src\\steps\\loginpagesteps.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 49544499
+              "duration": 23433800
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1097474000
+              "duration": 1024889699
             }
           },
           {
@@ -92,111 +92,72 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1073568999
+              "duration": 910579900
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 11,
-            "name": "user click on accountDropdown",
+            "name": "user clicks on Shop link",
             "match": {
-              "location": "src\\steps\\logoutsteps.ts:5"
+              "location": "src\\steps\\buysamsunggalaxybooksteps.ts:5"
             },
             "result": {
               "status": "passed",
-              "duration": 297841199
+              "duration": 353641299
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 12,
-            "name": "user cliks on my Account button",
+            "name": "user clicks on add to cart button of Samsung Galaxy Book5 Pro 14",
             "match": {
-              "location": "src\\steps\\paymentsteps.ts:5"
+              "location": "src\\steps\\buysamsunggalaxybooksteps.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 381595500
+              "duration": 399929500
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 13,
-            "name": "user clicks on connection and security link",
+            "name": "user clicks on viewcart button",
             "match": {
-              "location": "src\\steps\\securitysteps.ts:5"
+              "location": "src\\steps\\buysamsunggalaxybooksteps.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 747562399
+              "duration": 491397100
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 14,
-            "name": "user enters current password \"Test@1234\"",
+            "name": "user clicks on remove link",
             "match": {
-              "location": "src\\steps\\securitysteps.ts:9"
+              "location": "src\\steps\\removeproductsteps.ts:5"
             },
             "result": {
               "status": "passed",
-              "duration": 228010600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 15,
-            "name": "user enters new password \"Test@12345\"",
-            "match": {
-              "location": "src\\steps\\securitysteps.ts:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 71282199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 16,
-            "name": "user enters verify new password \"Test@12345\"",
-            "match": {
-              "location": "src\\steps\\securitysteps.ts:17"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 34942100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 17,
-            "name": "user clicks on change password button",
-            "match": {
-              "location": "src\\steps\\securitysteps.ts:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3979331500
+              "duration": 258304000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
-            "name": "user is able to see the message \"Password Updated!\"",
+            "line": 15,
+            "name": "user user is able to see message \"Your cart is empty!\"",
             "match": {
-              "location": "src\\steps\\securitysteps.ts:25"
+              "location": "src\\steps\\removeproductsteps.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 970697499
+              "duration": 928513999
             }
           },
           {
@@ -204,24 +165,24 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1447650900
+              "duration": 1109374800
             }
           }
         ],
         "tags": [
           {
-            "name": "@changepassord",
+            "name": "@removeProduct",
             "line": 3
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "address-functionality",
+    "id": "product-remove-functionality",
     "line": 1,
     "keyword": "Feature",
-    "name": "address functionality",
+    "name": "Product remove functionality",
     "tags": [],
-    "uri": "src\\features\\security.feature"
+    "uri": "src\\features\\productremove.feature"
   }
 ]
