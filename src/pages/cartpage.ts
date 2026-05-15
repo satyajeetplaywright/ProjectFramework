@@ -22,6 +22,7 @@ export class Cartpage
     }
 
     public async clickOnRemoveLink() {
+        await this.page.locator(this.remove_link).waitFor({ state: 'visible' });
         await this.page.locator(this.remove_link).click();
     }
 
