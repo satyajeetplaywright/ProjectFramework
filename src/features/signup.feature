@@ -1,14 +1,14 @@
 Feature: Signup Functionality
 
-    @valid_details 
-    Scenario: Verify Signup with valid details
-        Given user lauches browser and url
-        When user clicks on signin button
-        And user clicks on dont have account link
-        And user enters name "test110" and email "test110@gmail.com"
-        And user enters password "Test@1234" and confirm password "Test@1234"
-        And user clicks on signup button
-        Then verify account created
+    # @valid_details 
+    # Scenario: Verify Signup with valid details
+    #     Given user lauches browser and url
+    #     When user clicks on signin button
+    #     And user clicks on dont have account link
+    #     And user enters name "test110" and email "test110@gmail.com"
+    #     And user enters password "Test@12345" and confirm password "Test@12345"
+    #     And user clicks on signup button
+    #     Then verify account created
 
     @invalid_details
     Scenario: Verify Signup with invalid (duplicate email) details

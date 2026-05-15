@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "product-remove-functionality;verify-user-is-able-to-remove-product-from-cart",
+        "id": "address-functionality;verify-user-is-able-to-add-address",
         "keyword": "Scenario",
         "line": 4,
-        "name": "Verify user is able to remove product from cart",
+        "name": "Verify user is able to add address",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 5090686700
+              "duration": 10334343399
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 352199
+              "duration": 7135399
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 370261899
+              "duration": 789936600
             }
           },
           {
@@ -53,20 +53,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 853170100
+              "duration": 1377385699
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "user enters password \"Test@12345\"",
+            "name": "user enters password \"Test@1234\"",
             "match": {
               "location": "src\\steps\\loginpagesteps.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 23433800
+              "duration": 44619000
             }
           },
           {
@@ -79,7 +79,846 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1024889699
+              "duration": 700877300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "user landed on \"https://ecommerceguru.odoo.com/my\"",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:21"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 986403999,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"https://ecommerceguru.odoo.com/my\"\u001b[39m\nReceived string:    \u001b[31m\"https://ecommerceguru.odoo.com/web/login\"\u001b[39m\n    at Proxy.<anonymous> (C:\\Users\\SATYAJEET\\Playwright Framework\\ProjectFramework_08_Feb_26\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at CustomWorld.<anonymous> (C:\\Users\\SATYAJEET\\Playwright Framework\\ProjectFramework_08_Feb_26\\src\\steps\\loginpagesteps.ts:24:23)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "user click on accountDropdown",
+            "match": {
+              "location": "src\\steps\\logoutsteps.ts:5"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "user cliks on my Account button",
+            "match": {
+              "location": "src\\steps\\paymentsteps.ts:5"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "user clicks on Addresses link",
+            "match": {
+              "location": "src\\steps\\addressaddsteps.ts:5"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "user clicks on add address button",
+            "match": {
+              "location": "src\\steps\\addressaddsteps.ts:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "user enters name as \"test110\", email as \"test111@gmail.com\", phone as \"7777766666\"",
+            "match": {
+              "location": "src\\steps\\addressaddsteps.ts:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "user enters street as \"MG road\", city as \"Mumbai\", zip code as \"777666\"",
+            "match": {
+              "location": "src\\steps\\addressaddsteps.ts:20"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "user clicks on save address button",
+            "match": {
+              "location": "src\\steps\\addressaddsteps.ts:27"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "user is able to see \"MG road\" and \"Mumbai\" in added address",
+            "match": {
+              "location": "src\\steps\\addressaddsteps.ts:31"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4175808499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@addAddress",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "address-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "address functionality",
+    "tags": [],
+    "uri": "src\\features\\address.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "buy-product-functionality;verify-buy-product-successfully",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verify buy product successfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 7322704500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user lauches browser and url",
+            "match": {
+              "location": "src\\steps\\homepagesteps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 390699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "user clicks on signin button",
+            "match": {
+              "location": "src\\steps\\homepagesteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 470489099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user enters email \"test110@gmail.com\"",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 902556600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "user enters password \"Test@1234\"",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58036399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1026368399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "user landed on \"https://ecommerceguru.odoo.com/my\"",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:21"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 907007999,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"https://ecommerceguru.odoo.com/my\"\u001b[39m\nReceived string:    \u001b[31m\"https://ecommerceguru.odoo.com/web/login\"\u001b[39m\n    at Proxy.<anonymous> (C:\\Users\\SATYAJEET\\Playwright Framework\\ProjectFramework_08_Feb_26\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at CustomWorld.<anonymous> (C:\\Users\\SATYAJEET\\Playwright Framework\\ProjectFramework_08_Feb_26\\src\\steps\\loginpagesteps.ts:24:23)\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at processImmediate (node:internal/timers:472:9)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "user clicks on Shop link",
+            "match": {
+              "location": "src\\steps\\buysamsunggalaxybooksteps.ts:5"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "user clicks on add to cart button of Samsung Galaxy Book5 Pro 14",
+            "match": {
+              "location": "src\\steps\\buysamsunggalaxybooksteps.ts:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "user clicks on viewcart button",
+            "match": {
+              "location": "src\\steps\\buysamsunggalaxybooksteps.ts:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "user clicks on checkout button",
+            "match": {
+              "location": "src\\steps\\buysamsunggalaxybooksteps.ts:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "user clicks on confirm button",
+            "match": {
+              "location": "src\\steps\\buysamsunggalaxybooksteps.ts:21"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "user clicks on confirm button from extra info page",
+            "match": {
+              "location": "src\\steps\\buysamsunggalaxybooksteps.ts:25"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "user clicks on I agree to the terms & conditions checkbox",
+            "match": {
+              "location": "src\\steps\\buysamsunggalaxybooksteps.ts:29"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "user clicks on Pay now button",
+            "match": {
+              "location": "src\\steps\\buysamsunggalaxybooksteps.ts:33"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "user clicks on skip now link",
+            "match": {
+              "location": "src\\steps\\buysamsunggalaxybooksteps.ts:37"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "user able to see the message \"Thank you for your order.\"",
+            "match": {
+              "location": "src\\steps\\buysamsunggalaxybooksteps.ts:41"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2395833999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@buyProduct",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "buy-product-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "buy product Functionality",
+    "tags": [],
+    "uri": "src\\features\\buySamsungGalaxyBook.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "logout-functionality;verify-logout-successfully",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verify logout successfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 5078628599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user lauches browser and url",
+            "match": {
+              "location": "src\\steps\\homepagesteps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 804100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "user clicks on signin button",
+            "match": {
+              "location": "src\\steps\\homepagesteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 469654099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user enters email \"test110@gmail.com\"",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1481014899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "user enters password \"Test@1234\"",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 80006999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 598915999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "user landed on \"https://ecommerceguru.odoo.com/my\"",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:21"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 926758699,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"https://ecommerceguru.odoo.com/my\"\u001b[39m\nReceived string:    \u001b[31m\"https://ecommerceguru.odoo.com/web/login\"\u001b[39m\n    at Proxy.<anonymous> (C:\\Users\\SATYAJEET\\Playwright Framework\\ProjectFramework_08_Feb_26\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at CustomWorld.<anonymous> (C:\\Users\\SATYAJEET\\Playwright Framework\\ProjectFramework_08_Feb_26\\src\\steps\\loginpagesteps.ts:24:23)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "user click on accountDropdown",
+            "match": {
+              "location": "src\\steps\\logoutsteps.ts:5"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "user clicks on logout button",
+            "match": {
+              "location": "src\\steps\\logoutsteps.ts:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "user landed on \"https://ecommerceguru.odoo.com/\"",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:21"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2636980199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@logout",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "logout-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Logout Functionality",
+    "tags": [],
+    "uri": "src\\features\\logout.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "payment-method-functionality;verify-user-is-able-to-add-card-details",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verify user is able to add card details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4470924000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user lauches browser and url",
+            "match": {
+              "location": "src\\steps\\homepagesteps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 252000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "user clicks on signin button",
+            "match": {
+              "location": "src\\steps\\homepagesteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 431735800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user enters email \"test110@gmail.com\"",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1132797500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "user enters password \"Test@1234\"",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31575700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 649649899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "user landed on \"https://ecommerceguru.odoo.com/my\"",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:21"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 926478900,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"https://ecommerceguru.odoo.com/my\"\u001b[39m\nReceived string:    \u001b[31m\"https://ecommerceguru.odoo.com/web/login\"\u001b[39m\n    at Proxy.<anonymous> (C:\\Users\\SATYAJEET\\Playwright Framework\\ProjectFramework_08_Feb_26\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at CustomWorld.<anonymous> (C:\\Users\\SATYAJEET\\Playwright Framework\\ProjectFramework_08_Feb_26\\src\\steps\\loginpagesteps.ts:24:23)\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at processImmediate (node:internal/timers:472:9)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "user click on accountDropdown",
+            "match": {
+              "location": "src\\steps\\logoutsteps.ts:5"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "user cliks on my Account button",
+            "match": {
+              "location": "src\\steps\\paymentsteps.ts:5"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "user clicks on payment Method link",
+            "match": {
+              "location": "src\\steps\\paymentsteps.ts:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "user add payment details \"1111222233335555\"",
+            "match": {
+              "location": "src\\steps\\paymentsteps.ts:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "user clicks on save button",
+            "match": {
+              "location": "src\\steps\\paymentsteps.ts:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "user is able to see the payment details on payment details page \"1111222233335555\"",
+            "match": {
+              "location": "src\\steps\\paymentsteps.ts:21"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1264983399
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@paymentDetailsAdd",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "payment-method-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "payment method functionality",
+    "tags": [],
+    "uri": "src\\features\\payment.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "product-remove-functionality;verify-user-is-able-to-remove-product-from-cart",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verify user is able to remove product from cart",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6748370199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user lauches browser and url",
+            "match": {
+              "location": "src\\steps\\homepagesteps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 292499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "user clicks on signin button",
+            "match": {
+              "location": "src\\steps\\homepagesteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 474896099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user enters email \"test110@gmail.com\"",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 873593800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "user enters password \"Test@12345\"",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35652300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1216276199
             }
           },
           {
@@ -92,7 +931,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 910579900
+              "duration": 1083617199
             }
           },
           {
@@ -105,7 +944,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 353641299
+              "duration": 735549299
             }
           },
           {
@@ -118,7 +957,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 399929500
+              "duration": 538912499
             }
           },
           {
@@ -131,7 +970,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 491397100
+              "duration": 464947100
             }
           },
           {
@@ -143,8 +982,9 @@
               "location": "src\\steps\\removeproductsteps.ts:5"
             },
             "result": {
-              "status": "passed",
-              "duration": 258304000
+              "status": "failed",
+              "duration": 30055716599,
+              "error_message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[contains(text(),\\'Remove\\')]')\u001b[22m\n\n    at Cartpage.clickOnRemoveLink (C:\\Users\\SATYAJEET\\Playwright Framework\\ProjectFramework_08_Feb_26\\src\\pages\\cartpage.ts:25:51)\n    at CustomWorld.<anonymous> (C:\\Users\\SATYAJEET\\Playwright Framework\\ProjectFramework_08_Feb_26\\src\\steps\\removeproductsteps.ts:6:29)"
             }
           },
           {
@@ -156,8 +996,8 @@
               "location": "src\\steps\\removeproductsteps.ts:9"
             },
             "result": {
-              "status": "passed",
-              "duration": 928513999
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -165,7 +1005,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1109374800
+              "duration": 920337199
             }
           }
         ],
@@ -184,5 +1024,508 @@
     "name": "Product remove functionality",
     "tags": [],
     "uri": "src\\features\\productremove.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "signin-functionality;verify-signin-successfully-with-valid-details",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verify Signin successfully with valid details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 5870101299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user lauches browser and url",
+            "match": {
+              "location": "src\\steps\\homepagesteps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 212800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "user clicks on signin button",
+            "match": {
+              "location": "src\\steps\\homepagesteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 992008799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user enters email \"test110@gmail.com\"",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 681044899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "user enters password \"Test@1234\"",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35258900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 656167300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "user landed on \"https://ecommerceguru.odoo.com/my\"",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:21"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1037549299,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"https://ecommerceguru.odoo.com/my\"\u001b[39m\nReceived string:    \u001b[31m\"https://ecommerceguru.odoo.com/web/login\"\u001b[39m\n    at Proxy.<anonymous> (C:\\Users\\SATYAJEET\\Playwright Framework\\ProjectFramework_08_Feb_26\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at CustomWorld.<anonymous> (C:\\Users\\SATYAJEET\\Playwright Framework\\ProjectFramework_08_Feb_26\\src\\steps\\loginpagesteps.ts:24:23)\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at processImmediate (node:internal/timers:472:9)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1773715500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@validSignIn",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "signin-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Signin Functionality",
+    "tags": [],
+    "uri": "src\\features\\signin.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "signup-functionality;verify-signup-with-valid-details",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verify Signup with valid details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 5254197899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user lauches browser and url",
+            "match": {
+              "location": "src\\steps\\homepagesteps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1446800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "user clicks on signin button",
+            "match": {
+              "location": "src\\steps\\homepagesteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 458964399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user clicks on dont have account link",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1579819600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "user enters name \"test110\" and email \"test110@gmail.com\"",
+            "match": {
+              "location": "src\\steps\\signuppagesteps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 464843299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "user enters password \"Test@1234\" and confirm password \"Test@1234\"",
+            "match": {
+              "location": "src\\steps\\signuppagesteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70740999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "user clicks on signup button",
+            "match": {
+              "location": "src\\steps\\signuppagesteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 431140400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "verify account created",
+            "match": {
+              "location": "src\\steps\\signuppagesteps.ts:18"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 210500599,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mMy Portal\u001b[27m | ecommerceguru\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mSign up login\u001b[27m | ecommerceguru\"\u001b[39m\n    at Proxy.<anonymous> (C:\\Users\\SATYAJEET\\Playwright Framework\\ProjectFramework_08_Feb_26\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at CustomWorld.<anonymous> (C:\\Users\\SATYAJEET\\Playwright Framework\\ProjectFramework_08_Feb_26\\src\\steps\\signuppagesteps.ts:22:27)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2162850900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@valid_details",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-functionality;verify-signup-with-invalid-(duplicate-email)-details",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Verify Signup with invalid (duplicate email) details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4959933499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "user lauches browser and url",
+            "match": {
+              "location": "src\\steps\\homepagesteps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 473899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "user clicks on signin button",
+            "match": {
+              "location": "src\\steps\\homepagesteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2008538499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "user clicks on dont have account link",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2050863700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "user enters name \"test101\" and email \"test101@gmail.com\"",
+            "match": {
+              "location": "src\\steps\\signuppagesteps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 218796300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "user enters password \"Test@1234\" and confirm password \"Test@1234\"",
+            "match": {
+              "location": "src\\steps\\signuppagesteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44730099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "user clicks on signup button",
+            "match": {
+              "location": "src\\steps\\signuppagesteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1779346099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "verify user gets text as \"Another user is already registered using this email address.\"",
+            "match": {
+              "location": "src\\steps\\signuppagesteps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 374519999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1861440099
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@invalid_details",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-functionality;verify-signup-with-blank-details",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Verify Signup with blank details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4513243099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "user lauches browser and url",
+            "match": {
+              "location": "src\\steps\\homepagesteps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 297199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "user clicks on signin button",
+            "match": {
+              "location": "src\\steps\\homepagesteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 442359499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "user clicks on dont have account link",
+            "match": {
+              "location": "src\\steps\\loginpagesteps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1272953000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "user enters name \"\" and email \"\"",
+            "match": {
+              "location": "src\\steps\\signuppagesteps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 388004600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "user enters password \"\" and confirm password \"\"",
+            "match": {
+              "location": "src\\steps\\signuppagesteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64017699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "user clicks on signup button",
+            "match": {
+              "location": "src\\steps\\signuppagesteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 101954299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "Then user should see validation error for required fields",
+            "match": {
+              "location": "src\\steps\\signuppagesteps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 215400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2124990099
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@blank_details",
+            "line": 23
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "signup-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Signup Functionality",
+    "tags": [],
+    "uri": "src\\features\\signup.feature"
   }
 ]
